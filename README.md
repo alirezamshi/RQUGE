@@ -5,7 +5,7 @@ RQUGE: Reference-Free Metric for Evaluating Question Generation by Answering the
   <img src="meta.jpeg" width="700"/>
 </p>
 
-We propose RQUGE, a **R**eference-free **QU**estion **G**eneration **E**valuation metric that can compute the quality of the candidate question without requiring the access to the reference question. Given the corresponding context and answer span, our metric calculates the acceptability score by applying a general question-answering module, followed by a span scorer.
+We propose RQUGE, a **R**eference-free **QU**estion **G**eneration **E**valuation metric that can compute the quality of the candidate question without requiring the access to the reference question. Given the corresponding context and answer span, our metric calculates the acceptability score by applying a general question-answering module, followed by a span scorer. You can find more detail in [the paper](https://arxiv.org/abs/2211.01482)
 
 Contents
 ---------------
@@ -51,9 +51,7 @@ pred_question = "how is the weather?"
 answer = "sunny"
 
 print(rquge.scorer(context, pred_question, answer))
-
 ```
-
 
 **Note:** the rquge score is between 1 to 5.
 
