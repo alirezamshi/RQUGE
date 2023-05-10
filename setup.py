@@ -3,7 +3,7 @@ from io import open
 from setuptools import find_packages, setup
 
 setup(
-    name="rquge_score",
+    name="rquge",
     version="0.1",
     author="Alireza Mohammadshahi*, Thomas Scialom, Majid Yazdani, Pouya Yanki, Angela Fan, James Henderson, Marzieh Saeidi",
     author_email="alireza.msh1373@gmail.com",
@@ -22,7 +22,7 @@ setup(
     ],
     entry_points={
         "console_scripts": [
-            "rquge-score=rquge_score_cli.scorer_cli:main",
+            "rquge=rquge_score_cli.scorer_cli:main",
         ]
     },
     python_requires=">=3.7",
