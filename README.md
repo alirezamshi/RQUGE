@@ -46,7 +46,7 @@ pip install git+https://github.com/alirezamshi/RQUGE
 Install it from the source by:
 ```
 git clone https://github.com/alirezamshi/RQUGE
-cd bert_score
+cd RQUGE
 pip install .
 ```
 
