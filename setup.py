@@ -22,7 +22,7 @@ setup(
     ],
     entry_points={
         "console_scripts": [
-            "rquge-score=rquge_score_cli:main",
+            "rquge-score=rquge_score_cli.scorer_cli:main",
         ]
     },
     python_requires=">=3.7",
