@@ -1,11 +1,21 @@
 RQUGE: Reference-Free Metric for Evaluating Question Generation by Answering the Question
 =================
+[![made-with-python](https://img.shields.io/badge/Made%20with-Python-red.svg)](#python)
+[![arxiv](https://img.shields.io/badge/arXiv-2211.01482-b31b1b.svg)](https://arxiv.org/abs/2211.01482)
+[![PyPI version bert-score](https://badge.fury.io/py/rquge.svg)](https://pypi.python.org/pypi/rquge/)[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) 
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black) 
+
 
 <p align="center">
   <img src="meta.jpeg" width="700"/>
 </p>
 
-We propose RQUGE, a **R**eference-free **QU**estion **G**eneration **E**valuation metric that can compute the quality of the candidate question without requiring the access to the reference question. Given the corresponding context and answer span, our metric calculates the acceptability score by applying a general question-answering module, followed by a span scorer. You can find more detail in [the paper](https://arxiv.org/abs/2211.01482).
+We propose RQUGE, a **R**eference-free **QU**estion **G**eneration **E**valuation metric that can compute the quality of the candidate question without requiring the access to the reference question. Given the corresponding context and answer span, our metric calculates the acceptability score by applying a general question-answering module, followed by a span scorer. You can find more detail in [the paper](https://arxiv.org/abs/2211.01482) (ACL2023).
+
+<p align="center">
+  <img src="main_model.jpeg" width="700"/>
+</p>
+
 
 Contents
 ---------------
