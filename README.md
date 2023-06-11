@@ -50,7 +50,7 @@ cd RQUGE
 pip install .
 ```
 
-Note: you need to download the pre-trained model for the span scorer module (available on HuggingFace Hub ```alirezamsh/quip-512-mocha```):
+Note: you need to download the pre-trained model for the span scorer module (available on [Huggingface](https://huggingface.co/alirezamsh/quip-512-mocha)🤗 ```alirezamsh/quip-512-mocha```):
 ```
 wget https://storage.googleapis.com/sfr-qafacteval-research/quip-512-mocha.tar.gz
 tar -xzvf quip-512-mocha.tar.gz
