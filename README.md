@@ -50,7 +50,7 @@ cd RQUGE
 pip install .
 ```
 
-Note: you need to download the pre-trained model for the span scorer module:
+Note: you need to download the pre-trained model for the span scorer module (available on HuggingFace Hub ```alirezamsh/quip-512-mocha```):
 ```
 wget https://storage.googleapis.com/sfr-qafacteval-research/quip-512-mocha.tar.gz
 tar -xzvf quip-512-mocha.tar.gz
@@ -71,7 +71,7 @@ We provide a command line interface (CLI) of RQUGE, you can use it as follows:
 rquge --input_type #MODE --sp_scorer_path #PATH_TO_SPAN_SCORER --qa_model_path #PATH_TO_QA_MODEL --context #CONTEXT_FILE --question #QUESTION --answer #ANSWER --output_path #OUTPUT
 
 #MODE: The type of input (sample or offline). In the sample mode, "--context", "--question", and "--answer" commands contain string, while in offline mode, they contain path to files including contexts, corresponding questions and answers
-#PATH_TO_SPAN_SCORER: path to the checkpoint of span scorer model
+#PATH_TO_SPAN_SCORER: path to the local checkpoint of span scorer model or "alirezamsh/quip-512-mocha"
 #PATH_TO_QA_MODEL: name of QA model on Huggingface or local path 
 #CONTEXT_FILE: a text file containing one context per line (directly in the input in "sample" mode)
 #QUESTION_FILE: a text file containing one question per line (directly in the input in "sample" mode)
