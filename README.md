@@ -1,4 +1,4 @@
-RQUGE: Reference-Free Metric for Evaluating Question Generation by Answering the Question
+RQUGE🤗: Reference-Free Metric for Evaluating Question Generation by Answering the Question
 =================
 [![made-with-python](https://img.shields.io/badge/Made%20with-Python-red.svg)](#python)
 [![arxiv](https://img.shields.io/badge/arXiv-2211.01482-b31b1b.svg)](https://arxiv.org/abs/2211.01482)
@@ -20,9 +20,30 @@ We propose RQUGE, a **R**eference-free **QU**estion **G**eneration **E**valuatio
 Contents
 ---------------
 
+- [Huggingface Evaluate🤗](#hf_evaluate)
 - [Installation](#install)
 - [Calculation](#calculation)
 - [Citation](#citation)
+
+<a name="hf_evaluate"/>  
+
+HuggingFace Evaluation 🤗
+--------------  
+
+RQUGE score is available on [Huggingface Evaluate](https://huggingface.co/docs/evaluate/index). It can be used as:
+
+```
+from evaluate import load
+rqugescore = load("alirezamsh/rquge")
+generated_questions = ["how is the weather?"]
+contexts = ["the weather is sunny"]
+answers = ["sunny"]
+results = rquge.compute(generated_questions=generated_questions, contexts=contexts, answers=answers)
+print(results["mean_score"])
+>>> [5.05]
+```
+
+The demo and further details are also available on [here](https://huggingface.co/spaces/alirezamsh/rquge).
 
 <a name="install"/>  
 
