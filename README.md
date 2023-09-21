@@ -38,7 +38,7 @@ rqugescore = load("alirezamsh/rquge")
 generated_questions = ["how is the weather?"]
 contexts = ["the weather is sunny"]
 answers = ["sunny"]
-results = rquge.compute(generated_questions=generated_questions, contexts=contexts, answers=answers)
+results = rqugescore.compute(generated_questions=generated_questions, contexts=contexts, answers=answers)
 print(results["mean_score"])
 >>> [5.05]
 ```
