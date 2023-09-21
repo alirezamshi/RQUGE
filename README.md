@@ -43,7 +43,7 @@ print(results["mean_score"])
 >>> [5.05]
 ```
 
-The demo and further details are also available on [here](https://huggingface.co/spaces/alirezamsh/rquge).
+The demo and further details are also available on [here](https://huggingface.co/spaces/alirezamsh/rquge). (```device``` argument can be used to run RQUGE on GPU/CPU. Default is CPU)
 
 <a name="install"/>  
 
